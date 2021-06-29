@@ -2,7 +2,7 @@
 function generatePassword(){ 
   // setup character sets
   var selectionArray = "";
-  const characterSets = new Array("abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ","0123456789","~!@#$%^&*_,.?:;");
+  const characterSets = new Array("abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ","0123456789","!#$%&'()*+,-./:;<=>?@[\]^_`{|}~");
   const csPrompts = new Array("Use lowercase letters? y or n","Use UPPERcase letters? y or n","Use Numbers? y or n","Use Special characters? y or n");
 
   //User input
@@ -15,10 +15,10 @@ function generatePassword(){
 
   for (let i = 0; i < characterSets.length; i++) {
     var chooseYorN = "reset";
-    while (((chooseYorN.charAt(0) != "y")&&(chooseYorN.charAt(0) != "n"))||(chooseYorN.length != 1)){
+    while (((chooseYorN.toLowerCase() != "y")&&(chooseYorN.toLowerCase() != "n"))||(chooseYorN.length != 1)){
       chooseYorN = window.prompt(csPrompts[i]);
     };
-    if (chooseYorN == "y"){
+    if (chooseYorN.toLocaleLowerCase() == "y"){
       //add character set
       selectionArray = selectionArray.concat(characterSets[i]);
       //insert this type of character at a random spot
