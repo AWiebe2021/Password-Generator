@@ -1,4 +1,4 @@
-// Assignment code here
+ // Assignment code here
 function generatePassword(){ 
   // setup character sets
   var selectionArray = "";

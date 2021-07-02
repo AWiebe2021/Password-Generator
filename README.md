@@ -14,8 +14,8 @@ This week’s Challenge requires you to create an application that an employee c
 The project can be viewed at: https://awiebe2021.github.io/Password-Generator/
 The projects code can be accessed at: https://github.com/AWiebe2021/Password-Generator
 
-
-
+## Screenshot
+![Password-Generator Screenshot](Screenshot.png)
 
 ## Credits
 
